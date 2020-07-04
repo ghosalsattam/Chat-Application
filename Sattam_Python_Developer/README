@@ -1,0 +1,19 @@
+Language:
+	Python-3.x
+	
+Dependencies:
+	The following libraries were used:
+	socket, select, threading, Crypto, errno, sys, os, random
+	
+To run the pipeline; first open two different terminals(if you are running both server and client on same system). First run the server.py
+file on one terminal.
+Then run the client.py file on the other terminal. As soon as the client connects, a message of client connection is shown in server. To 
+start conversation, type a message from client side first. The server receives the message.
+Similarly other clients can also connect,(only when the server is free and waiting for clients messages).
+The program is handled through threading. So the clients can communicate independently of server's state(typing/not typing).
+
+The message.txt file contain the name of the Users. You can change the usernames to as per your convenience.
+
+In the client-server communication, RSA encryption is used.
+
+To change the device/port, change the PORT and IP variable in the server and client codes. 
